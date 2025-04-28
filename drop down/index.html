@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>drop down</title>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(240,240,240);
+    }
+    .container{
+      height: 150px;
+      width: 500px;
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      margin-top: 200px;
+    }
+    .box{
+      display: flex; 
+      margin: 30px auto;
+      display: flex;
+      justify-content: space-evenly;
+    }
+    select{
+       font-size: 25px;
+       margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+      <h1 align="center">Qualification</h1>
+      <div class="box">
+        <select id="qua" onchange="display()">
+          <option value="0">--select qualification--</option>
+          <option value="1">Under Graduate</option>
+          <option value="2">Post graduate</option>
+        </select>
+        <select id="courses">
+          <option value="0">--All courses--</option>
+          <option value="1">BCA</option>
+          <option value="2">MCA</option>
+          <option value="3">BA</option>
+          <option value="4">MA</option>
+          <option value="5">BBA</option>
+          <option value="6">MBA</option>
+          <option value="7">BCom</option>
+          <option value="8">MCom</option>
+          <option value="9">Btech</option>
+          <option value="10">Mtech</option>
+        </select>
+        <select style="display: none;" id="ug">
+          <option value="0">--UG courses--</option>
+          <option value="1">BCA</option>
+          <option value="2">BA</option>
+          <option value="3">BBA</option>
+          <option value="4">BCom</option>
+          <option value="5">Btech</option>
+        </select>
+        <select style="display: none;" id="pg">
+          <option value="0">--PG courses--</option>
+          <option value="1">MCA</option>
+          <option value="2">MA</option>
+          <option value="3">MBA</option>
+          <option value="4">MCom</option>
+          <option value="5">Mtech</option>
+        </select>
+      </div>
+    </div>
+    <script>
+    function display(){
+      var qua = document.getElementById("qua").value;
+      var courses = document.getElementById("courses");
+      var ug = document.getElementById("ug");
+      var pg = document.getElementById("pg");
+      if(qua!=0){
+        if(qua==1){
+          courses.style.display = "none";
+          ug.style.display = "block";
+          pg.style.display = "none";
+        }
+        else{
+          courses.style.display = "none";
+          pg.style.display = "block";
+          ug.style.display = "none";
+        }
+      }
+      else{
+        courses.style.display = "block";
+          pg.style.display = "none";
+          ug.style.display = "none";
+      }
+    }
+    </script>
+</body>
+</html> 

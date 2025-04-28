@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clock</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer ></script>
+    
+</head>
+<body onload="setInterval('startClock()',1000)">
+     
+    <main>
+        <div id="theme" style="display: flex; justify-content: right;">
+            <input type="checkbox" name="theme" id="btn-toggle">
+-        </div>
+        <div class="container">
+
+            
+            <div class="clock">
+                <div class="hour Hand"></div>
+                <div class="minute Hand"></div>
+                <div class="second Hand"></div>
+            </div>
+            <div id="digital">
+                <span id="h"></span>:
+                <span id="m"></span>:
+                <span id="s"></span>
+                <span id="ampm"></span>
+            </div>
+        </div>
+    </main>
+    
+
+</body>
+</html>

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>O Level Registration Form</title>
+	<script src="script.js"></script>
+</head>
+<body>
+	<h3 align="center">REGISTRATION APPLICATION FORM FOR COURSE - O LEVEL</h3>
+	<form>
+	   <table border="1" cellspacing="0" cellpadding="5px" align="center" width="80%">
+		  <tr>
+			   <td colspan="3" bgcolor="#488CA5"><font color="white"><b>1.Registration Form</b> </font></td>
+		   </tr>
+		   <tr>
+			   <td width="10%">1.0</td>
+			   <td width="60%">Have you got online reference number for enrolment<br> with
+							NIELIT/Accreditation/Extension Center</td>
+			   <td width="30%"> 
+				  <label for="y">Yes</label><input type="radio" id="y" name="que">
+				  <label for="n">No</label><input type="radio" id="n" name="que">
+			   </td>
+		   </tr>
+		   <tr>
+			   <td>1.1</td>
+			   <td>Registration sought for</td>
+			   <td>
+				 <select disabled>
+					<option>O level</option>
+				 </select>
+			   </td>
+		   </tr>
+			<tr>
+			   <td>1.2</td>
+			   <td>Applied As</td>
+			   <td>
+				  <label for="d" checked>Direct Candidate</label><input type="radio" id="d" name="app">
+				  <label for="i">Through Institute</label><input type="radio" id="i" name="app">
+			   </td>
+		   </tr>
+			<tr>
+			   <td>1.3</td>
+			   <td>Exam Cycle</td>
+			   <td>
+				  <input type="text" value="JULY 2024" readonly>
+			   </td>
+		   </tr>
+			<tr>
+			   <td>1.4</td>
+			   <td>Registration Fee Will Be Paid By?</td>
+			   <td>
+				  <input type="text" value="Candidate direct to NIELIT" disabled>
+			   </td>
+		   </tr>
+		   <tr>
+			   <td colspan="3" bgcolor="#488CA5"><font color="white" size="3"><b>2. Applicant's Personal Details </b></font></td>
+		   </tr>
+		   <tr>
+			   <td>2.1</td>
+			   <td><label for="name">Applicant's full name</label></td>
+			   <td>
+				   <select>
+						 <option>--Select--</option>
+						 <option>Mr.</option>
+						 <option>Mrs.</option>
+						 <option>Others</option>
+				   </select>
+				   <input type="text" id="name">
+			   </td>
+		   </tr>
+		   <tr>
+			   <td>2.2</td>
+			   <td>Care Of</td>
+			   <td>
+				 <label for="par">Parents</label><input checked type="radio" name="care" id="par">
+				 <label for="gar">Gardian</label><input type="radio" name="care" id="gar">
+			   </td>
+		   </tr><tr>
+			   <td>2.2.1</td>
+			   <td><label for="fath">Father's Name</label></td>
+			   <td>
+				   <select disabled>
+					   <option>Mr.</option>
+				   </select>
+				   <input type="text" name="father's name" id="fath">
+			   </td>
+		   </tr><tr>
+			   <td>2.2.2</td>
+			   <td><label for="moth">Mother's Name</label</td>
+			   <td>
+				   <select disabled>
+						<option>Mrs.</option>
+				   </select>
+				   <input type="text" name="mother's name" id="moth">
+			   </td>
+		   </tr><tr>
+			   <td>2.3</td>
+			   <td>Gender</td>
+			   <td>
+				   <label for="male">Male</label><input type="radio" id="male" name="gen">
+				   <label for="fem">Female</label><input type="radio" id="fem" name="gen">
+				   <label for="oth">Others</label><input type="radio" id="oth" name="gen">
+			   </td>
+		   </tr><tr>
+			   <td>2.4</td>
+			   <td>Date of Birth</td>
+			   <td>
+					<input type="date"> 
+			   </td>
+		   </tr>
+		   <tr>
+			   <td>2.5</td>
+			   <td>Marital Status</td>
+			   <td>
+				  <select>
+						<option>--Select--</option>
+						<option>Single</option>
+						<option>Married</option>
+						<option>Divorced</option>
+						<option>Widowed</option>
+				  </select>
+			   </td>
+		   </tr>
+		   <tr>
+			   <td>2.6</td>
+			   <td>Category</td>
+			   <td>
+					<select>
+						 <option>--Select--</option>
+						 <option>General</option>
+						 <option>OBC</option>
+						 <option>SC</option>
+						 <option>ST</option>
+					</select>
+			   </td>
+		   </tr>
+		   <tr>
+			   <td>2.7</td>
+			   <td>Handicapped</td>
+			   <td>
+				   <Label for="ye">Yes</label><input type="radio" id="ye" name="hand">
+				   <label for="no">No</label><input checked type="radio" id="no" name="hand">
+			   </td>
+		   </tr>
+		   <tr>
+			   <td>2.8</td>
+			   <td>Ex-Serviceman</td>
+			   <td>
+				   <label for="Y">Yes</label><input type="radio" id="Y" name="ex">
+				   <label for="N">No</label><input checked type="radio" id="N" name="ex">
+			   </td>
+		   </tr><tr>
+			   <td>2.9</td>
+			   <td>EWS</td>
+			   <td>
+				   <label for="Ye">Yes</label><input type="radio" id="Ye" name="ews">
+				   <label for="No">No</label><input checked type="radio" id="No" name="ews">
+		   </tr><tr>
+			   <td>2.10</td>
+			   <td>Religion</td>
+			   <td>
+					 <select>
+						   <option>--Select--</option>
+						   <option>Hindu</option>
+						   <option>Muslim</option>
+						   <option>Jain</option>
+						   <option>Christian</option>
+					 </select>
+			   </td>
+		   </tr>
+		   <tr>
+			   <td colspan="3" bgcolor="#488CA5"><font color="white" size="3"><b>3.Contact Details </b></font></td>
+		   </tr>
+		   <tr>
+			   <td>3.1</td>
+			   <td><label for="mob">Mobile Number</label></td>
+			   <td>
+					<input type="tel" id="mob" name="mob">
+			   </td>
+		   </tr>
+			<tr>
+			   <td>3.2</td>
+			   <td><label for="email">"Email ID</td>
+			   <td>
+					<input type="email" id="email" name="email">
+			   </td>
+		   </tr>
+			<tr>
+			   <td>3.3</td>
+			   <td><label for="add1">Address Line 1</label></td>
+			   <td>
+				   <input type="text" id="add1" name="add">
+			   </td>
+		   </tr>
+			<tr>
+			   <td>3.4</td>
+			   <td><label for="add2">Address Line 2</label></td>
+			   <td>
+				   <input type="text" id="add2" name="add">
+			   </td>
+		   </tr>
+			<tr>
+			   <td>3.5</td>
+			   <td><label fpr="cty">City</label></td>
+			   <td>
+				  <input type="text" id="cty" name="city">
+			   </td>
+		   </tr>
+			<tr>
+			   <td>3.6</td>
+			   <td>State</td>
+			   <td>
+				   <select>
+					   <option>Andhra Pradesh</option>
+					   <option>Himachal Pradesh</option>
+					   <option>Madhya Pradesh</option>
+					   <option>Uttar Pradesh</option>
+					   <option>Bihar</option>
+					   <option>Karnataka</option>
+					   <option>Telangana</option>
+					   <option>Mizoram</option>
+					   <option>Assam</option>
+					   <option>Odisha</option>
+					   <option>Tamil Nadu</option>
+					   <option>Kerala</option>
+					   <option>Nagaland</option>
+					   <option>Chattisgarh</option>
+					   <option>Gujarat</option>
+					   <option>Rajasthan</option>
+					   <option>West Bengal</option>
+					   <option>Goa</option>
+					   <option>Haryana</option>
+					   <option>Meghlaya</option>
+					   <option>Manipur</option>
+					   <option>Sikkim</option>
+				   </select>
+			   </td>
+		   </tr>
+			<tr>
+			   <td>3.7</td>
+			   <td><label for="pin">Pin Code</label></td>
+			   <td>
+				   <input type="text" id="pin" nmae="pin">
+			   </td>
+		   </tr>
+		   <tr>
+			   <td colspan="3" bgcolor="#488CA5"><font color="white" size="3"><b>4.Educational / Qualification Details </b></font></td>
+		   </tr>
+		   <tr>
+			   <td>4.1</td>
+			   <td>Highest Educational Qualification</td>
+			   <td>
+				   <select>
+					  <option>--Select--</option>
+					  <option>10<sup>th</sup></option>
+					  <option>12<sup>th</sup></option>
+					  <option>Graduate</option>
+					  <option>Post Graduate</option>
+				  </select>
+			   </td>
+		   </tr>
+		   <tr>
+			   <td>4.2</td>
+			   <td><label for="year">Year of Passing</label></td>
+			   <td>
+				  <input type="text" id="year" name="YoP">
+			   </td>
+		   </tr>
+		   <tr>
+			   <td colspan="3" bgcolor="#488CA5"><font color="white"><b>5.Identification Details</b></font></td>
+		   </tr>
+		   <tr>
+			   <td>5.1</td>
+			   <td><label for=""adh">Aadhar Card Number</label></td>
+			   <td>
+				   <input type="text" id="adh" name="Aadhar" maxlenght="12">
+			   </td>
+		   </tr>
+		   <tr>
+			   <td>5.2</td>
+			   <td>Upload Photo</td>
+			   <td>
+					<input type="file">
+			   </td>
+		   </tr>
+		   <tr>
+			   <td colspan="3" align="center">
+					<input type="submit" value="Submit">
+					<input type="rsest" value="Back">
+			   </td>
+		   </tr>
+		</table>
+	</form>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body
+        {
+        background-color: #707070;
+        }
+        .box
+        {
+            height: 250px;
+            width: 800px;
+            background-color: #202020;
+            margin: auto;
+            padding: 20px;
+            margin-top: 80px;
+            border: 5px double #dadada;
+            border-radius: 3px;
+            color: #dadada;
+            font-size: 40px; 
+            text-align: center;
+        }
+        h4{
+            text-align: center;
+        }
+        .container
+        {
+            display: flex;
+            justify-content: space-between;
+            margin: 50px;
+            font-size: 40px; 
+            text-align: center;
+        }
+        input[type="text"]
+        {
+            height: 45px;
+            width: 300px;
+            background-color: #dadada;
+            color: black;
+            border-radius: 5px;
+            font-size: 30px;
+            border: 3px solid black;
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            var t1 = document.getElementById("t1");
+            var t2 = document.getElementById("t2");
+
+            function toCelcius(Farenheit) {
+                return 5/9 * (Farenheit - 32);
+            }
+
+            function toFarenheit(Celcius) {
+                return 9/5 * Celcius + 32;
+            }
+
+            function calculate1() {
+                var value = parseFloat(t1.value);
+                if (!isNaN(value)) {
+                    t2.value = toFarenheit(value).toFixed(2);
+                } else {
+                    t2.value = "";
+                }
+            }
+
+            function calculate2() {
+                var value = parseFloat(t2.value);
+                if (!isNaN(value)) {
+                    t1.value = toCelcius(value).toFixed(2);
+                } else {
+                    t1.value = "";
+                }
+            }
+
+            t1.addEventListener("keyup", calculate1);
+            t2.addEventListener("keyup", calculate2);
+
+            function selectText1() {
+                t1.select();
+            }
+
+            function selectText2() {
+                t2.select();
+            }
+
+            t1.addEventListener("click", selectText1);
+            t2.addEventListener("click", selectText2);
+        };
+    </script>
+
+
+</head>
+<body>
+      <div class="box">
+        <u><h4>Temperature Converter</h4></u>
+
+           <div class="container">
+                <div class="left">
+                    <span id="cel">Celcius</span><br>
+                    <input type="text" id="t1" placeholder="Enter the value (&deg;C)" onkeyup="calculate1()" onclick="selectText1()">
+                </div>
+                <span style="margin-top: 50px;">=</span>
+                <div class="right">
+                   <span id="far">Farenheit</span><br>
+                   <input type="text" id="t2" placeholder="Enter the value (&deg;F)" onkeyup="calculate2()" onclick="selectText2()">
+                 </div>
+           </div>
+      </div>
+</body>
+</html> 

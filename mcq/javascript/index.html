@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCQ using javascript</title>
+   <link rel="stylesheet" href="style.css">
+   <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div id="box">
+         <h2 style="font-family: serif; color: #8c05fb; font-size: 50px;">Model Test</h2><hr>
+       
+        <div id="quebox"> 
+            <br>
+
+            <div id="start">
+                <h2>Start the test</h2><br><br><br>
+                <input type="button" value="START"  onclick="start()" onmouseout="nextQue()">
+                <br><br><br><br>
+                <hr>
+            </div>
+
+            <div id="result" style="display: none;">
+              <br>
+              <h3>Congratulations!!</h3><br><br>
+              <h2>Your score is</h2>
+              <h2></h2><br><br>
+              <input type='button' value='Refresh' onclick='refresh()' class='b'>
+              <br><br><br>
+              <hr type="dashed">
+            </div>
+
+            <div id="content" style="display: none;">
+               <div id="que">
+                  <span id="s1">q </span><br><br><br>
+               </div>
+                   
+                <div class="opt">
+                   a. <label for="ch1"><span id="1">a</span></label><br><br>
+                </div>
+                <div class="opt">
+                   b. <label for="ch2"><span id="2">b</span></label><br><br>
+                </div>
+                <div class="opt">
+                    c. <label for="ch3"><span id="3">c </span></label><br><br>
+                </div>
+                <div class="opt">
+                    d.   <label for="ch4"><span id="4">d</span></label><br><br>
+                </div>
+                <hr><br>
+                <span id="ans">Answer:</span><span id="s2 "></span>
+
+                <div id="btn">
+
+                <input type="button" value="PREV" onclick="preQue()" class="b">
+                <input type="button" value="Save & Next" onclick="nextQue()" class="b" id="next">
+                <input type="button" value="SUBMIT" onclick="submit()" class="b" id="submit" style="display: none;">
+                
+                </div>
+          </div>
+        
+        </div>
+     </div>
+
+</body>
+</html>

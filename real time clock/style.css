@@ -1,0 +1,104 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.951);
+}
+.body-on{
+    background-color: #ddd;
+}
+main{ 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+}
+#theme{
+    height: 30px;
+    width: 70px; 
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 40px;
+    right: 150px;
+    border-radius: 6%;
+    border-radius: 20px;
+
+}
+#btn-toggle:checked{
+    background-color: blue;
+}
+.container
+{
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    color: white;
+}
+.clock
+{
+    height: 250px;
+    width: 250px;
+    background: url(assets/clock.png);
+    background-size: 100%;
+    border-radius: 50%;
+    position: relative;
+}
+.clock,#digital,#theme{
+    box-shadow: inset 4px 4px 4px  rgba(5, 5, 5, 0.922),
+                 inset -4px -4px 4px rgba(35, 34, 34, 0.514),
+                  -4px -4px 4px rgba(35, 34, 34, 0.514),
+                   4px 4px 4px rgba(0, 0, 0, 0.917);
+}
+.clock::after
+{
+    content: "";
+    height: 4%;
+    width: 4%;
+    border-radius: 50%;
+    background-color: rgb(254, 13, 65);
+    opacity: .7; 
+    position: absolute;
+    inset: 48% 50% 50% 48%;
+}
+.hour{
+    height: 30px;
+    width: 3px;
+    background-color: rgb(221, 46, 84);
+    position: absolute;
+}
+#digital
+{ 
+    text-align: center;
+    color: white;
+    height: 50px;
+    width: 160px;
+    font-size:  1.6em;
+    margin-top: 20%;
+    padding:  10px;
+    border-radius: 20px;
+}
+span{
+    background-color: transparent;
+}
+#h{
+    color: rgb(212, 138, 150);
+}
+#m{
+    color: rgb(105, 179, 221);
+}
+#s{
+    color: rgb(223, 221, 219);
+}
+#ampm{
+    color: white;
+    font-size: 0.5em;
+}

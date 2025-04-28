@@ -1,0 +1,29 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mock Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mock Test</h1>
+        <div id="timer" class="timer">Time Remaining: 30:00</div>
+        <div id="question-container" class="question-container">
+            <!-- Question and options will be dynamically inserted here -->
+        </div>
+        <div class="navigation">
+            <button id="mark-review-btn" class="mark-review-btn" onclick="markForReview()">Mark for Review</button>
+            <button id="prev-btn" class="nav-btn" onclick="prevQuestion()">Previous</button>
+            <button id="next-btn" class="nav-btn" onclick="nextQuestion()">Next</button>
+            <button id="submit-btn" class="submit-btn" onclick="submitTest()">Submit Test</button>
+        </div>
+        <div id="summary-container" class="summary-container" style="display: none;">
+            <!-- Summary of the test will be displayed here after submission -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
